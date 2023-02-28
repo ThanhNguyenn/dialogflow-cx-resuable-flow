@@ -1,0 +1,31 @@
+{
+  "name": "c407cde8-6631-4ea0-a53e-d71a4a8993b1",
+  "displayName": "Between 2:00 - 2:30",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Hey NJ, it's almost cut off (2:30pm VIC time) to connect you $session.params.collect_date. Would you still like to proceed?" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "confirmation.yes",
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Additional Charge",
+    "name": "828e2a6a-4bbd-4dd7-8fe1-249f7ee31b65"
+  }, {
+    "intent": "confirmation.no ",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Connect the new date",
+    "name": "98c16008-361c-4cbe-aa74-922507d476b4"
+  } ]
+}

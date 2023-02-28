@@ -1,0 +1,40 @@
+{
+  "name": "b51d02ae-c317-48f2-bbe3-e872aa745d0f",
+  "displayName": "date_confirmation",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "So NJ $session.params.collect_date is the earliest date HOOD can connect your energy." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Does that suit you?" ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "This produces the current date and time $session.params.date.year. " ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "confirmation.yes",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "New Page",
+    "name": "4ba735c2-2bc4-451e-b5b7-9b33210fc76f"
+  }, {
+    "intent": "confirmation.no ",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Current Page",
+    "name": "887882f1-7e58-41bd-bb11-5e9adf06ab13"
+  } ]
+}

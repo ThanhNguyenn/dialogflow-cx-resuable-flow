@@ -1,0 +1,7 @@
+{
+  "entities": [ {
+    "value": "VIC",
+    "synonyms": [ "12 Jervis St, Camberwell VIC 3124", "20 Lonsdale St Melbourne VIC 3000", "22 Lansell Dr, Cranbourne North VIC 3977", "5 Homebush Cres, Hawthorn East VIC 3123", "5 Wingham Ct, Frankston VIC 3199" ],
+    "languageCode": "en"
+  } ]
+}

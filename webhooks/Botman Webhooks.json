@@ -1,0 +1,10 @@
+{
+  "name": "a705b244-eb9d-44e5-8e97-8cbc711f858a",
+  "displayName": "Botman Webhooks",
+  "genericWebService": {
+    "uri": "https://fc4f-165-228-101-190.au.ngrok.io/webhook"
+  },
+  "timeout": {
+    "seconds": 30
+  }
+}

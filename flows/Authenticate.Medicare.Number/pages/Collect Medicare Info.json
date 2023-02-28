@@ -1,0 +1,95 @@
+{
+  "name": "dc2704cd-bb8b-4bdf-92ca-2b32bd1cf7e7",
+  "displayName": "Collect Medicare Info",
+  "form": {
+    "parameters": [ {
+      "displayName": "Collect_Medicare_Card_Colour",
+      "required": true,
+      "entityType": "@custom-medicare-card-colour",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Please select your Medicare card colour?" ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "We did not quite catch that! Could you please enter your Medicare Card Number again?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "deb244c9-62da-4dc4-8bd5-09057c8b0d4a"
+        } ]
+      }
+    }, {
+      "displayName": "Collect_Medicare_Number",
+      "required": true,
+      "entityType": "@custom-medicare-number",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "What is your Medicare card number?" ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "We not quite catch that! Could you please enter your Medicare Card Number again please?", "Opps! The input is invalid. It must follow the following format (...). Could you please try again?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "380d6e66-4d6a-4624-bb0c-95e97b6154a2"
+        } ]
+      }
+    }, {
+      "displayName": "Collect_Expiry_date",
+      "required": true,
+      "entityType": "@sys.date",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "What is the expiry date? for example mm/yyyy?" ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      }
+    }, {
+      "displayName": "Collect_Individual_Reference_Number",
+      "required": true,
+      "entityType": "@sys.number",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "What is your individual reference number?" ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      }
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.STATUS = FINAL",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Flow",
+    "name": "8e41d13b-08a1-4402-9e9a-0839386dc679"
+  } ]
+}

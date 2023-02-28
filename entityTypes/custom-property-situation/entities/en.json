@@ -1,0 +1,11 @@
+{
+  "entities": [ {
+    "value": "Residential",
+    "synonyms": [ "Residential", "residential" ],
+    "languageCode": "en"
+  }, {
+    "value": "business",
+    "synonyms": [ "business", "Business", "Company" ],
+    "languageCode": "en"
+  } ]
+}

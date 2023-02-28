@@ -1,0 +1,245 @@
+{
+  "name": "07280d8e-c722-4baf-b9ce-ffc66aab4c5e",
+  "displayName": "Collect Personal Information",
+  "form": {
+    "parameters": [ {
+      "displayName": "collect-title",
+      "required": true,
+      "entityType": "@custom-title",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Please select your title." ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-input-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Please select your title again. " ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "d18fb272-b0b0-44df-9433-e666f281d6c5"
+        }, {
+          "event": "sys.no-match-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Please select your title again." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "10748662-624c-4c24-a11f-b1f2bbdd19e4"
+        } ]
+      }
+    }, {
+      "displayName": "collect-firstname",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Please enter your first name as it would appear on your ID." ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-input-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Please enter your first name as it would appear on your ID." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "3f7f4310-405c-4b7d-8f28-d14558590bf5"
+        }, {
+          "event": "sys.no-match-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Please enter your first name as it would appear in your ID." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "5a16f3ca-7ef5-4412-8065-b0a982ac4159"
+        } ]
+      }
+    }, {
+      "displayName": "collect-lastname",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Please enter your last name as it would appear on your ID." ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-input-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Please enter your last name as it would appear in your ID." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "8ad3fed9-115b-469d-81df-c357a505e52f"
+        }, {
+          "event": "sys.no-match-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Please enter your last name as it would appear in your ID." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "787fe267-f1fd-42a5-b568-51100833708e"
+        } ]
+      }
+    }, {
+      "displayName": "collect-middle-name",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Please enter your middle name as it would appear in your ID." ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-input-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Please enter your middle name as it would appear in your ID." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "160a1977-1b43-4094-b8cb-2cd154ac797d"
+        }, {
+          "event": "sys.no-match-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Please enter your middle name as it would appear in your ID" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "42b2f8b6-0323-4022-bd36-a83da469a248"
+        } ]
+      }
+    }, {
+      "displayName": "collect-email",
+      "required": true,
+      "entityType": "@sys.email",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "What is your email address?" ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-input-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "What is your email address?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "789bd7bb-0431-4e53-80b7-523c3035cfa6"
+        }, {
+          "event": "sys.no-match-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "What is your email address?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "25a05a1f-54be-4032-9b74-80a03a617ff7"
+        } ]
+      }
+    }, {
+      "displayName": "collect-dob",
+      "required": true,
+      "entityType": "@sys.date-period",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "What is your date of birth? \nPlease enter following the format dd/mm/yyyy. " ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-input-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "What is your date of birth? \nPlease enter following the format dd/mm/yyyy." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "2aa14375-01a5-4990-bb44-d9fc7178fc18"
+        }, {
+          "event": "sys.no-match-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "What is your date of birth?\nPlease enter following this format dd/mm/yyyy." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "7f31e879-32a6-469b-a088-756047fd3e03"
+        } ]
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Great! This will only take you a few moment!" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = FINAL",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Confirmation",
+    "name": "eec6137e-4943-4451-b25c-bf2ce24e3e00"
+  } ]
+}

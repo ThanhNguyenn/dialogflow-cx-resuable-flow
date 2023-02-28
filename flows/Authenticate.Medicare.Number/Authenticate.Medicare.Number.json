@@ -1,0 +1,39 @@
+{
+  "name": "0d727f4e-d5f3-4006-b6a5-fb8cacef32e3",
+  "displayName": "Authenticate.Medicare.Number",
+  "transitionRoutes": [ {
+    "intent": "Fire up Medicare ID",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Collect Medicare Info",
+    "name": "3839cc32-7a64-4f50-9e16-8090e1d0d1f0"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "04dff3f1-512c-4ff5-a1ac-8badb99b6df8"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "66997e8e-a5f8-4eaf-b1d6-f02f2ef04843"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_STANDARD",
+    "classificationThreshold": 0.30000001
+  }
+}

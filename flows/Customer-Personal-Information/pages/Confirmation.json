@@ -1,0 +1,30 @@
+{
+  "name": "a32cabe4-11c6-49e7-ba94-6ab16217cea5",
+  "displayName": "Confirmation",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "You are in confirmation page\n\nPlease type \"Yes\" if you would like to end the session, type \"no\"  to go back to this message again." ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "confirmation.yes",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Session",
+    "name": "19514ec5-e131-4038-855f-c76572de7c61"
+  }, {
+    "intent": "confirmation.no ",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Current Page",
+    "name": "8f2530ad-03f1-45bb-8549-85e912fd0028"
+  } ]
+}

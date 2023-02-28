@@ -1,0 +1,32 @@
+{
+  "name": "b3b8ae04-7bc6-4ef1-90f8-cc4dfa7f6c05",
+  "displayName": "After 2:30 Flow",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Hey NJ, it's past the cut (2:30pm VIC time) to connect your energy today. $session.params.suggested_date/$session.params.collect_date.month/$session.params.collect_date.year is the earliest date HOOD can connect your energy." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Does that suit you?" ]
+      },
+      "languageCode": "en"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "suggested_date",
+      "value": "$sys.func.ADD($session.params.date.day,1)"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "confirmation.yes",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Flow after 2:30",
+    "name": "234573a8-ddde-49f7-bc28-31c9760e0105"
+  } ]
+}

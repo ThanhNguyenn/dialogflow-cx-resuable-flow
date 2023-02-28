@@ -1,0 +1,10 @@
+{
+  "name": "4af45838-a07f-4834-8659-248113358464",
+  "displayName": "date_collecting",
+  "parameters": [ {
+    "id": "date-time",
+    "entityType": "@sys.date-time"
+  } ],
+  "priority": 500000,
+  "description": "This aims for collecting the date"
+}

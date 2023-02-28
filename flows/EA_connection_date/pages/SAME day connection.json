@@ -1,0 +1,42 @@
+{
+  "name": "29cbcb26-55f2-4d3c-8e1e-34433430b6fa",
+  "displayName": "SAME day connection",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "It's the same day connection." ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "($session.params.date.hours = 14 AND $session.params.date.minutes = 0) OR $session.params.date.hours \u003c 14",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "So this is the response before 2pm" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Before 2pm",
+    "name": "283b63bc-b93e-48c8-bc32-dd8ec2b4f1cd"
+  }, {
+    "condition": "$session.params.collect_date.hours = 14 AND ($session.params.collect_date.minutes \u003e= 0 AND $session.params.collect_date.minutes \u003c= 29)",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Between 2:00 - 2:30",
+    "name": "49c1459c-b6d2-4aae-baa7-b830bec24a7f"
+  }, {
+    "condition": "$session.params.date.hours \u003e 14 AND $session.params.date.minutes \u003e 30",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "After 2:30 Flow",
+    "name": "0fa1fc76-b015-463d-a966-73e1b5a14711"
+  } ]
+}

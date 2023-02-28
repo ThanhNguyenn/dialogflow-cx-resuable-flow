@@ -1,0 +1,15 @@
+{
+  "entities": [ {
+    "value": "Green",
+    "synonyms": [ "Green" ],
+    "languageCode": "en"
+  }, {
+    "value": "Blue",
+    "synonyms": [ "Blue" ],
+    "languageCode": "en"
+  }, {
+    "value": "Yellow",
+    "synonyms": [ "Yellow" ],
+    "languageCode": "en"
+  } ]
+}

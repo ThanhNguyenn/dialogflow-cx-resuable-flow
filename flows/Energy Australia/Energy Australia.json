@@ -1,0 +1,44 @@
+{
+  "name": "d97af289-7fea-49b1-aee5-4c713145519d",
+  "displayName": "Energy Australia",
+  "transitionRoutes": [ {
+    "intent": "Start Energy Australia",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thank you for accepting the plan! Let's wrap up the connection." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Collect Mobile Number",
+    "name": "cbb6a8bb-3e1e-48b6-b7d1-f78cce0e605e"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "What is your best contact number?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "af273d7e-326f-42e7-a38e-d5420c68e187"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "What is your best contact number?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "472a5eb8-9ca2-4d78-91a8-8df027e8eb92"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_STANDARD",
+    "classificationThreshold": 0.30000001
+  }
+}

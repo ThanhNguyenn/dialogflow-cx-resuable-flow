@@ -1,0 +1,42 @@
+{
+  "name": "7c411367-c821-459a-8583-53f1287ae99b",
+  "displayName": "Powershop",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "payload": {
+        "message": "Hey Team, HOOD is an all-in-one moving platform. Connect your energy fast \u0026 free with top Australian Energy providers.",
+        "metadata": {
+          "contentType": "300",
+          "payload": [ {
+            "buttons": [ {
+              "action": {
+                "payload": {
+                  "message": "Powershop",
+                  "replyMetadata": {
+                    "key1": "value1"
+                  }
+                },
+                "type": "quickReply"
+              },
+              "name": "Powershop"
+            } ],
+            "description": "Bharathi Road \n Near Head Post Office",
+            "header": {
+              "imgSrc": "",
+              "overlayText": "$400"
+            },
+            "subtitle": "When you connect Electricity with our partners, HOOD...",
+            "title": "Connect Utilities",
+            "titleExt": "4.2/5"
+          } ],
+          "templateId": "10"
+        },
+        "platform": "kommunicate"
+      },
+      "languageCode": "en"
+    } ]
+  }
+}

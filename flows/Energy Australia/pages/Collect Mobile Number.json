@@ -1,0 +1,55 @@
+{
+  "name": "2f4d6cca-c89b-4f82-9770-00f5cf54d401",
+  "displayName": "Collect Mobile Number",
+  "form": {
+    "parameters": [ {
+      "displayName": "collect-number",
+      "required": true,
+      "entityType": "@custom-phone-number",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "What is your best contact number?" ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-input-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Your input is in valid (from no-input)" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "fe9d572a-c7f9-47a8-9403-b3b9dcf10d86"
+        }, {
+          "event": "sys.no-match-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Your input is invalid. Please try again?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "394307ff-4555-42d8-8ac1-a43f1924702a"
+        } ]
+      }
+    } ]
+  },
+  "entryFulfillment": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "$sys.func.MID($session.params.collect-number, 1, 2) = 04 AND $sys.func.LEN($session.params.collect-number) = 10",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Connection Date",
+    "name": "38fcbc18-8195-4239-9bef-07ed5a073d98"
+  } ]
+}

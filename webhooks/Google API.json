@@ -1,0 +1,10 @@
+{
+  "name": "0605e246-eaa4-4db1-9842-e6d1dce545e1",
+  "displayName": "Google API",
+  "genericWebService": {
+    "uri": "https://1665-165-228-101-190.au.ngrok.io/google"
+  },
+  "timeout": {
+    "seconds": 5
+  }
+}

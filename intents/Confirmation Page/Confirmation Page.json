@@ -1,0 +1,6 @@
+{
+  "name": "1e4f8444-0e0a-42e4-bd9c-b8cb7918db00",
+  "displayName": "Confirmation Page",
+  "priority": 500000,
+  "description": "This confirmation page is used to confirm the flow for collecting personal information."
+}

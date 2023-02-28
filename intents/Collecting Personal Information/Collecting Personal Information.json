@@ -1,0 +1,6 @@
+{
+  "name": "5facfdde-891c-4f39-bad4-c7c3a33df2d3",
+  "displayName": "Collecting Personal Information",
+  "priority": 500000,
+  "description": "This page would collect: title, first name, middle name, last name, dob, email address"
+}

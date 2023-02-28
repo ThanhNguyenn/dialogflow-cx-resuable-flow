@@ -1,0 +1,364 @@
+{
+  "name": "f3916714-6024-42c3-9d90-ca1f8e94d87c",
+  "displayName": "Collecting Address and Plan",
+  "form": {
+    "parameters": [ {
+      "displayName": "collect-address-vic-only",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "What is your full connection address?" ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-input-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Please enter something!" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "b8d11346-e487-413a-8a0f-ab4550b75890"
+        }, {
+          "event": "sys.no-match-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Oop! I did not catch that. Could you try again?", "Your address is invalid. Please try again?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "2f4d008d-b386-4032-88a7-84cd5d92104e"
+        } ]
+      }
+    }, {
+      "displayName": "collect-property-type",
+      "required": true,
+      "entityType": "@custom-property-situation",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "payload": {
+              "message": "Is this a business or residential premises?",
+              "metadata": {
+                "contentType": "300",
+                "payload": [ {
+                  "message": "You have selected Business",
+                  "title": "Business"
+                }, {
+                  "message": "You have selected Residential",
+                  "title": "Residential"
+                } ],
+                "templateId": "6"
+              },
+              "platform": "kommunicate"
+            },
+            "languageCode": "en"
+          }, {
+            "text": {
+              "text": [ "Is this a business or residential premises?" ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-input-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "payload": {
+                "message": "Is this a business or residential premises?",
+                "metadata": {
+                  "contentType": "300",
+                  "payload": [ {
+                    "message": "You have selected Business",
+                    "title": "Business"
+                  }, {
+                    "message": "You have selected Residential",
+                    "title": "Residential"
+                  } ],
+                  "templateId": "6"
+                },
+                "platform": "kommunicate"
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "b77afb1a-a5fe-44a7-bc96-8a34e0eafb58"
+        }, {
+          "event": "sys.no-match-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "payload": {
+                "message": "Is this a business or residential premises?",
+                "metadata": {
+                  "contentType": "300",
+                  "payload": [ {
+                    "message": "You have selected Business",
+                    "title": "Business"
+                  }, {
+                    "message": "You have selected Residential",
+                    "title": "Residential"
+                  } ],
+                  "templateId": "6"
+                },
+                "platform": "kommunicate"
+              },
+              "languageCode": "en"
+            }, {
+              "text": {
+                "text": [ "Is this business or residential premises?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "32077ba6-1f56-46a7-804a-4c5296ad7152"
+        } ]
+      }
+    }, {
+      "displayName": "collect-owner-property",
+      "required": true,
+      "entityType": "@custom-owner-property",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "payload": {
+              "message": "Do you rent or own a home?",
+              "metadata": {
+                "contentType": "300",
+                "payload": [ {
+                  "message": "You have selected rent",
+                  "title": "Rent"
+                }, {
+                  "message": "You have selected own",
+                  "title": "Own"
+                } ],
+                "templateId": "6"
+              },
+              "platform": "kommunicate"
+            },
+            "languageCode": "en"
+          }, {
+            "text": {
+              "text": [ "Do you rent or own a home?" ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-input-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "payload": {
+                "message": "Do you rent or own a home?",
+                "metadata": {
+                  "contentType": "300",
+                  "payload": [ {
+                    "message": "You have selected rent",
+                    "title": "Rent"
+                  }, {
+                    "message": "You have selected own",
+                    "title": "own"
+                  } ],
+                  "templateId": "6"
+                },
+                "platform": "kommunicate"
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "4f02832e-f62d-457c-a3be-78058616e7bd"
+        }, {
+          "event": "sys.no-match-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "payload": {
+                "message": "Do you rent or own a home?",
+                "metadata": {
+                  "contentType": "300",
+                  "payload": [ {
+                    "message": "You have selected rent",
+                    "title": "Rent"
+                  }, {
+                    "message": "You have selected own",
+                    "title": "own"
+                  } ],
+                  "templateId": "6"
+                },
+                "platform": "kommunicate"
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "f06d270d-eccd-4142-9f61-c542c57d5511"
+        } ]
+      }
+    }, {
+      "displayName": "collect-solar-situation",
+      "required": true,
+      "entityType": "@custom-solar-selection",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "payload": {
+              "message": "Does your property have solar power?",
+              "metadata": {
+                "contentType": "300",
+                "payload": [ {
+                  "message": "You have selected solar",
+                  "title": "Solar"
+                }, {
+                  "message": "You have selected non solar",
+                  "title": "Non solar"
+                } ],
+                "templateId": "6"
+              },
+              "platform": "kommunicate"
+            },
+            "languageCode": "en"
+          }, {
+            "text": {
+              "text": [ "Does your property have solar power?" ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-input-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "payload": {
+                "message": "Does your property have solar power?",
+                "metadata": {
+                  "contentType": "300",
+                  "payload": [ {
+                    "message": "You have selected solar",
+                    "title": "Solar"
+                  }, {
+                    "message": "You have selected non solar",
+                    "title": "Non solar"
+                  } ],
+                  "templateId": "6"
+                },
+                "platform": "kommunicate"
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "4b91f2fd-5387-4521-9b49-f2444cf22183"
+        }, {
+          "event": "sys.no-match-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "payload": {
+                "message": "Does your property have solar power?",
+                "metadata": {
+                  "contentType": "300",
+                  "payload": [ {
+                    "message": "You have selected solar",
+                    "title": "Solar"
+                  }, {
+                    "message": "You have selected non solar",
+                    "title": "Non solar"
+                  } ],
+                  "templateId": "6"
+                },
+                "platform": "kommunicate"
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "3c8a6c2d-94b5-405b-9494-e4dbd0c3da39"
+        } ]
+      }
+    } ]
+  },
+  "entryFulfillment": {
+  
+  },
+  "transitionRoutes": [ {
+    "intent": "healthcare",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Authenticate.Medicare.Number",
+    "name": "56daaad4-a47c-4fab-aa63-0372c4fd79b6"
+  }, {
+    "intent": "passport",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "You are verifying through passport" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetFlow": "Authenticate.Passport.number",
+    "name": "234528db-6650-4014-9fe8-282d1dd0fd9c"
+  }, {
+    "condition": "$page.params.status = FINAL",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "collect-license",
+        "value": "PENDING"
+      } ]
+    },
+    "targetFlow": "Authentication.Driver.License",
+    "name": "beba1819-c18e-4da1-b4c1-79248053a2d8"
+  }, {
+    "condition": "$session.params.collect-license = \"PENDING\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Authentication.Driver.License",
+    "name": "7cce03e1-c1e7-4ddb-ad26-67690b645d99"
+  }, {
+    "condition": "$session.params.collect-license = DONE",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Confirmation",
+    "name": "36cc4553-8bd1-4da9-9ce8-7f7a4070b896"
+  } ],
+  "eventHandlers": [ {
+    "event": "webhook.error",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Webhooks Error" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "e87e9794-2c92-48e1-a304-610943ffa151"
+  }, {
+    "event": "webhook.error.bad-request",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Webhooks Invalid" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "1eee4234-90d9-4362-ba85-3f2dd3bc6260"
+  }, {
+    "event": "webhook.error.rejected",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Webhook Rejected" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "6f797509-4941-4ef5-84d3-5600231373f2"
+  } ]
+}

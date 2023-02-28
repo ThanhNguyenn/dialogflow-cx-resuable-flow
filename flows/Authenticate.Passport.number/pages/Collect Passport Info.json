@@ -1,0 +1,57 @@
+{
+  "name": "d5e2c573-0790-46b4-afbc-ebaadc9d5956",
+  "displayName": "Collect Passport Info",
+  "form": {
+    "parameters": [ {
+      "displayName": "Collect-passport-number",
+      "required": true,
+      "entityType": "@custom-passport-number",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "What is your Passport number?" ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      }
+    }, {
+      "displayName": "collect-passport-country",
+      "required": true,
+      "entityType": "@custom-countries",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "What is your passport's country of issue?" ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      }
+    }, {
+      "displayName": "Collect-expiry-date",
+      "required": true,
+      "entityType": "@sys.date",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "What is the expiry date? for example mm/dd/yyyy" ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      }
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.STATUS = FINAL",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Flow",
+    "name": "dfdc6962-380f-422c-aec9-18420ab9ad6f"
+  } ]
+}

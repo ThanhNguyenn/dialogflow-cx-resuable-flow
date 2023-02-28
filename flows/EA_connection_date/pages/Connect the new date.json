@@ -1,0 +1,30 @@
+{
+  "name": "ad8bdc2d-4cfa-46bf-a48b-953cfb5e6fb6",
+  "displayName": "Connect the new date",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Would you like to choose a new connection date?" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "confirmation.yes",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "new date collect",
+    "name": "e4615bff-b9c9-4687-ba73-9830c8cd7954"
+  }, {
+    "intent": "confirmation.no ",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "further support",
+    "name": "08af5f30-7c06-4508-8c27-a39ff906855b"
+  } ]
+}

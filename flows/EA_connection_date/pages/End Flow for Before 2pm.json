@@ -1,0 +1,23 @@
+{
+  "name": "f5c9651c-3444-4b45-a957-93714816b1e7",
+  "displayName": "End Flow for Before 2pm",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Awesome!" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Flow",
+    "name": "45f42378-9a2e-444d-8566-82d2ec78514c"
+  } ]
+}

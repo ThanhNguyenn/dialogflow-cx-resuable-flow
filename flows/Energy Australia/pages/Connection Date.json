@@ -1,0 +1,15 @@
+{
+  "name": "db8af3d0-dc52-496b-a994-ce381ed91cc2",
+  "displayName": "Connection Date",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Moving onto the confirmation page." ]
+      },
+      "languageCode": "en"
+    } ]
+  }
+}

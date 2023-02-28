@@ -1,0 +1,68 @@
+{
+  "name": "c1cdfed0-00a2-40eb-a700-1cc5c9b6588c",
+  "displayName": "Collect Driver License Info",
+  "form": {
+    "parameters": [ {
+      "displayName": "Collect_state_of_issue",
+      "required": true,
+      "entityType": "@custom-driver-license-issue-state",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "What state is your license issued in?" ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      }
+    }, {
+      "displayName": "Collect_license_number",
+      "required": true,
+      "entityType": "@custom-driver-license-number",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "What is your license number?" ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      }
+    }, {
+      "displayName": "Collect_license_expiry_date",
+      "required": true,
+      "entityType": "@sys.date",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "What is the expiry date? for example dd/mm/yyyy?" ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "You are entering to collect driver license" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.STATUS = FINAL",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "collect-license",
+        "value": "DONE"
+      } ]
+    },
+    "targetPage": "End Flow",
+    "name": "95ee925f-e737-4b40-92e7-f0da22f87b9c"
+  } ]
+}

@@ -1,0 +1,11 @@
+{
+  "entities": [ {
+    "value": "rental",
+    "synonyms": [ "rental", "Rental", "Renting" ],
+    "languageCode": "en"
+  }, {
+    "value": "own",
+    "synonyms": [ "bought it", "own", "Own" ],
+    "languageCode": "en"
+  } ]
+}

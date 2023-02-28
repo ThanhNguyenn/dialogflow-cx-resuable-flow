@@ -1,0 +1,9 @@
+{
+  "name": "b8ccc4ff-4c15-4942-a678-af0dc049423f",
+  "displayName": "hood.intent.residental.type",
+  "parameters": [ {
+    "id": "custom-property-situation",
+    "entityType": "@custom-property-situation"
+  } ],
+  "priority": 500000
+}

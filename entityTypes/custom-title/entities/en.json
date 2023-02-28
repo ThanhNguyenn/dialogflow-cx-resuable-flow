@@ -1,0 +1,23 @@
+{
+  "entities": [ {
+    "value": "Mr",
+    "synonyms": [ "mr", "Mr" ],
+    "languageCode": "en"
+  }, {
+    "value": "Ms",
+    "synonyms": [ "ms", "Ms" ],
+    "languageCode": "en"
+  }, {
+    "value": "Mrs",
+    "synonyms": [ "mrs", "Mrs" ],
+    "languageCode": "en"
+  }, {
+    "value": "Miss",
+    "synonyms": [ "miss", "Miss" ],
+    "languageCode": "en"
+  }, {
+    "value": "Dr",
+    "synonyms": [ "Doctor", "Dr", "dr" ],
+    "languageCode": "en"
+  } ]
+}

@@ -1,0 +1,40 @@
+{
+  "name": "6f071a21-64e6-49c3-887a-93ea7e9b5355",
+  "displayName": "Confirmation",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Perfect! Here's the plans HOOD has for you! \n\nLooking for more suppliers? Give our call center a call on 1300 242 824." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "To choose a plan, click the review the plan details button below and press select the plan button at the end of the page. Exit the page to continue to connection." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Please type \"Yes\" to end the session and \"No\" to repeat this progress again." ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "confirmation.yes",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Session",
+    "name": "6d887fbc-9ced-467d-94b5-d21f1207d637"
+  }, {
+    "intent": "confirmation.no ",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Confirmation",
+    "name": "d30b6fa1-da0c-4326-96e9-b81e3f19b82b"
+  } ]
+}

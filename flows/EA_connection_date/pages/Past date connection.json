@@ -1,0 +1,23 @@
+{
+  "name": "21088c03-bdb1-44e7-b545-46659727b3ba",
+  "displayName": "Past date connection",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "You date is in the past. Please type \"Yes\" to exit the conversation" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "confirmation.yes",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Flow",
+    "name": "b4fae0af-9331-4597-9c2c-4406efea1655"
+  } ]
+}

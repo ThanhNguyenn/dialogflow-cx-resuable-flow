@@ -1,0 +1,23 @@
+{
+  "name": "a6d38c72-209e-44c6-b7ab-3a27f5b4f1a2",
+  "displayName": "Before 2pm",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Hey NJ, I noticed that you are requesting the property to be connected $session.params.collect_date. Is this correct?" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "confirmation.yes",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Additional Charge",
+    "name": "fcf1c4fc-573e-4d72-9984-b2475cff9715"
+  } ]
+}

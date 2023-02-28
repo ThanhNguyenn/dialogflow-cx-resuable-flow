@@ -1,0 +1,31 @@
+{
+  "entities": [ {
+    "value": "vic",
+    "synonyms": [ "vic", "VIc", "Victoria" ],
+    "languageCode": "en"
+  }, {
+    "value": "nsw",
+    "synonyms": [ "New South Wales", "nsw" ],
+    "languageCode": "en"
+  }, {
+    "value": "sa",
+    "synonyms": [ "sa", "South Australia" ],
+    "languageCode": "en"
+  }, {
+    "value": "Tas",
+    "synonyms": [ "Tas", "Tasmania", "tassie" ],
+    "languageCode": "en"
+  }, {
+    "value": "wa",
+    "synonyms": [ "wa", "Western Australia" ],
+    "languageCode": "en"
+  }, {
+    "value": "qld",
+    "synonyms": [ "qld", "Queensland" ],
+    "languageCode": "en"
+  }, {
+    "value": "act",
+    "synonyms": [ "act", "Australian Capital Teritory", "Canberra" ],
+    "languageCode": "en"
+  } ]
+}

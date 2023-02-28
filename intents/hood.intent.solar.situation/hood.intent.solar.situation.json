@@ -1,0 +1,9 @@
+{
+  "name": "69f13e78-b37a-4b37-9820-1540b493a60f",
+  "displayName": "hood.intent.solar.situation",
+  "parameters": [ {
+    "id": "custom-solar-selection",
+    "entityType": "@custom-solar-selection"
+  } ],
+  "priority": 500000
+}

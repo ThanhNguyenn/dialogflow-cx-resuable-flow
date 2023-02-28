@@ -1,0 +1,15 @@
+{
+  "name": "eadfb4d4-bd87-431e-9e26-2220649d2f9f",
+  "displayName": "Getting Destination",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Please enter your destination." ]
+      },
+      "languageCode": "en"
+    } ]
+  }
+}

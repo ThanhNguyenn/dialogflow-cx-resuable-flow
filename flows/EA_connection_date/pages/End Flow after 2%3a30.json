@@ -1,0 +1,15 @@
+{
+  "name": "d7901944-1820-460f-af6f-0dd76d02db06",
+  "displayName": "End Flow after 2:30",
+  "form": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Flow",
+    "name": "a38d127f-1b1a-408f-862c-2c6db4d7c7ef"
+  } ]
+}

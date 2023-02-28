@@ -1,0 +1,72 @@
+{
+  "name": "748ca97c-d180-430e-b78c-7eb34be88d1b",
+  "displayName": "data_collecting",
+  "form": {
+    "parameters": [ {
+      "displayName": "collect_date",
+      "required": true,
+      "entityType": "@sys.date",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "What is your ideal connection date?" ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-input-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Enter a again please?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "2cf767ae-5ba5-453a-9717-459ccfbeb3f1"
+        }, {
+          "event": "sys.no-match-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Enter a again please?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "1ef6c98c-67ef-4c79-894f-80bafaf1ead2"
+        } ]
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "date",
+      "value": "$sys.func.NOW()"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.collect_date.day = $session.params.date.day AND $session.params.collect_date.month = $session.params.date.month AND $session.params.collect_date.year = $session.params.date.year",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "SAME day connection",
+    "name": "a96101d7-5627-43a4-9008-7970f777435a"
+  }, {
+    "condition": "$session.params.collect_date.day \u003c $session.params.date.day AND $session.params.collect_date.month \u003c $session.params.date.month",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Past date connection",
+    "name": "832d4299-1026-4394-851b-e7133db9f150"
+  }, {
+    "condition": "$session.params.collect_date.year \u003e= $session.params.date.year AND $session.params.collect_date.month \u003e= $session.params.date.month AND $session.params.collect_date.day \u003e $session.params.date.day",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "NOT same day connection",
+    "name": "d53cf3bc-6844-4857-a756-4a0934b360e8"
+  } ]
+}

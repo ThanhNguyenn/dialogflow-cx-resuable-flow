@@ -1,0 +1,28 @@
+{
+  "name": "8ee82b7f-1c8f-43e0-9564-2ebcb09c7448",
+  "displayName": "NOT same day connection",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Hey NJ, $sys.func.FORMAT_DATE($session.params.collect_date, \"dd/MM/yy\", 'en') is the earliest date HOOD can connect your energy." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Does that suit you?" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "confirmation.yes",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Flow",
+    "name": "5632cd7f-076a-4c1c-870a-b142a37fca47"
+  } ]
+}

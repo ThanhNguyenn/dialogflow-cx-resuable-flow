@@ -1,0 +1,6 @@
+{
+  "name": "c7c600d9-440e-4093-a1fe-4c0f53999506",
+  "displayName": "Collecting Address and chosen plan",
+  "priority": 500000,
+  "description": "This aims to connect the user's current address and selected plan in order to generate the available options for the users."
+}

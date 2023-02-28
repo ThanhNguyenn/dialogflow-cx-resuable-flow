@@ -1,0 +1,6 @@
+{
+  "name": "53045f0e-e3b9-42e1-bd16-4cab364b3b0d",
+  "displayName": "restart",
+  "priority": 500000,
+  "description": "(temporary) ends this subflow"
+}

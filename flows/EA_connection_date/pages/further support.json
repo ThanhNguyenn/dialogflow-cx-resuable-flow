@@ -1,0 +1,28 @@
+{
+  "name": "f766cbaa-05a5-4da9-940c-5b178099eb66",
+  "displayName": "further support",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "If you would like to give us a call, here's our contact number 1300 242 824. " ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "If there's something else we can help you with, click the link below to restart the conversation." ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "restart",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Flow",
+    "name": "81c81ec8-60c3-4a4c-9ff5-2851facdcc6b"
+  } ]
+}

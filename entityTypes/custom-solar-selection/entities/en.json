@@ -1,0 +1,11 @@
+{
+  "entities": [ {
+    "value": "solar",
+    "synonyms": [ "solar", "Solar" ],
+    "languageCode": "en"
+  }, {
+    "value": "non-solar",
+    "synonyms": [ "non-solar", "Non-solar" ],
+    "languageCode": "en"
+  } ]
+}

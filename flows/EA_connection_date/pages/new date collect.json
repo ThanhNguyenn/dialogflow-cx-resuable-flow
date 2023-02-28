@@ -1,0 +1,29 @@
+{
+  "name": "99775626-13dc-478c-97f7-f0113b664587",
+  "displayName": "new date collect",
+  "form": {
+    "parameters": [ {
+      "displayName": "collect-new-date",
+      "required": true,
+      "entityType": "@sys.date",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "When would you like to connect?" ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      }
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.STATUS = FINAL",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Flow between 2:00-2:30",
+    "name": "66451b5e-1e44-48f2-adbe-824370ed084b"
+  } ]
+}

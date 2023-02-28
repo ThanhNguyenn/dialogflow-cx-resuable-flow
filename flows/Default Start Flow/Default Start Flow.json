@@ -1,0 +1,108 @@
+{
+  "name": "00000000-0000-0000-0000-000000000000",
+  "displayName": "Default Start Flow",
+  "description": "A start flow created along with the agent",
+  "transitionRoutes": [ {
+    "intent": "Default Welcome Intent",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Hey Team, \n\nHOOD is an all-in-one moving platform. Connect your energy fast \u0026 free with top Australian Energy providers, get a quote for a Removalist or even discover your local coffee shop. \n\nGet your move started today!" ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "message": "Hey Team, HOOD is an all-in-one moving platform. Connect your energy fast \u0026 free with top Australian Energy providers.",
+          "metadata": {
+            "contentType": "300",
+            "payload": [ {
+              "buttons": [ {
+                "action": {
+                  "payload": {
+                    "url": "https://www.facebook.com"
+                  },
+                  "type": "link"
+                },
+                "name": "Check out Plans"
+              }, {
+                "action": {
+                  "payload": {
+                    "message": "connect electricity",
+                    "replyMetadata": {
+                      "key1": "value1"
+                    }
+                  },
+                  "type": "quickReply"
+                },
+                "name": "Connect Electricity"
+              } ],
+              "description": "Bharathi Road \n Near Head Post Office",
+              "header": {
+                "imgSrc": "",
+                "overlayText": "$400"
+              },
+              "subtitle": "When you connect Electricity with our partners, HOOD...",
+              "title": "Connect Utilities",
+              "titleExt": "4.2/5"
+            } ],
+            "templateId": "10"
+          },
+          "platform": "kommunicate"
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "1424e5d6-4d06-491d-8b79-cc1dc06c7e31"
+  }, {
+    "intent": "Collecting Address and chosen plan",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "We are going to ask you a few questions which will only take 2 minutes." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "To give you the best quote possible, we'll need to know your full connection address." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Collecting Address and Plan",
+    "name": "a2d4e9b1-5690-452d-a6ca-7d179f76abc4"
+  }, {
+    "intent": "go to EA flow",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "EA_connection_date",
+    "name": "a1877b91-a5a8-488f-8e86-69f2faa7f0b7"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "HOOD chatbot does not understand that. Could you please try that again?", "Opps! We don't have that option for you at the moment. Could you please select another option?", "Sorry Hood Chatbot is still under development at the moment. Be patient and could you please try again?", "Hood Chatbot did not catch that. Please try again?", "This is another event handle response. Could you please try again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "8eb08c06-e541-4eb8-b06b-4c3b98ada9cb"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "561be316-37d4-4421-a768-2767c47e9255"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_STANDARD",
+    "classificationThreshold": 0.30000001
+  }
+}
